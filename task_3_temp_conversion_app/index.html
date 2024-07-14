@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temparature Converter</title>
+
+    <!-- ============ icons =============== -->
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- =========== css ===================== -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2><i class="uil uil-temperature"></i>Temperature Converter</h2> 
+        <div class="converter">
+            <div class="convert_from">
+                <h1 class="title">Convert from:</h1>
+                <input  class="rb" type="radio" value="celsius" name="fromUnit">
+                <label>Celsius</label><br>
+                <input type="radio" value="fahrenheit" name="fromUnit">
+                <label>Fahrenheit</label><br>
+                <input type="radio" value="kelvin" name="fromUnit">
+                <label>Kelvin</label>
+    
+            </div>
+    
+            <div class="convert_to">
+               <h1 class="title">Convert to:</h1>
+                <input type="radio" value="celsius" data-symbol="C" name="toUnit">
+                <label>Celsius</label><br>
+                <input type="radio" value="fahrenheit" data-symbol="F" name="toUnit">
+                <label>Fahrenheit</label><br>
+                <input type="radio" value="kelvin" data-symbol="K" name="toUnit">
+                <label>Kelvin</label><br>
+               
+            </div>
+        </div>
+
+        <div class="input_value">
+            <input  class="textBox" type="text" id="textBox" placeholder="Enter Temparature">
+            <button id="submitButton">Convert</button><br>
+        </div>
+    
+        <div class="result_div">
+           <h1> Result: <br> <label id="result"></label></h1>
+        </div>
+
+    </div>
+
+    <!-- ================ javascript =================== -->
+    <script src="main.js"></script>
+
+</body>
+
+</html>
